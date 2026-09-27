@@ -44,6 +44,16 @@
     enable = true;
   };
 
+  # Aliases
+  environment.shellAliases = {
+    nrs = "sudo nixos-rebuild switch";
+    nrb = "sudo nixos-rebuild boot";
+    nrsf = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
+    zen-browser = "app.zen_browser.zen";
+    nds = "nix develop /etc/nixos";
+    c = "clear";
+  };
+
   # Enable networking
   networking.networkmanager.enable = true;
 
