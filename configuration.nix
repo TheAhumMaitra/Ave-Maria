@@ -177,7 +177,7 @@
       brightnessctl
       wiremix
       evince
-      xfce.parole
+      parole
       eog
     ];
   };
