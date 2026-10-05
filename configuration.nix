@@ -39,6 +39,9 @@
     withUWSM = true;
   };
 
+  # Enable Mango WM
+  programs.mango.enable = true;
+
   # Fish as default shell
   programs.fish = {
     enable = true;
@@ -120,6 +123,7 @@
       hyprlock
       kitty
       ghostty
+      neovim
       libnotify
       neovim
       lazygit
@@ -162,12 +166,14 @@
       json-glib
       gcc
       gnumake
+      tmux
       gdb
       clang
       cmake
       meson
       ninja
       pkg-config
+      fastfetch
       autoconf
       swaynotificationcenter
       automake
@@ -233,7 +239,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim
+    vim
     git
     glib
     wget
