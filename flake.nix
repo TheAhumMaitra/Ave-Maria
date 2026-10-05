@@ -5,6 +5,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     hyprland.url = "github:hyprwm/Hyprland";
 
+    mangowm = {
+      url = "github:mangowm/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -17,6 +22,7 @@
       nixpkgs,
       home-manager,
       hyprland,
+      mangowm,
       ...
     }:
     let
@@ -37,6 +43,7 @@
         modules = [
           ./configuration.nix
 
+	  mangowm.nixosModules.mango
           home-manager.nixosModules.home-manager
 
           {
