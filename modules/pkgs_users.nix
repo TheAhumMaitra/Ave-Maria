@@ -1,0 +1,82 @@
+{ config, pkgs, ... }:
+
+{
+
+  users.users.ahummaitra = {
+
+    packages = with pkgs; [
+      neovim
+      git
+      waybar
+      mise
+      hyprshutdown
+      hypridle
+      hyprlock
+      kitty
+      ghostty
+      neovim
+      libnotify
+      neovim
+      lazygit
+      wlogout
+      nemo
+      yaru-theme
+      papirus-icon-theme
+      awww
+      starship
+      vscode
+      fish
+      rustup
+      gtk3
+      lua
+      gtk4
+      libadwaita
+      cliphist
+      btop
+      wl-clipboard
+      glib
+      gsettings-desktop-schemas
+      gobject-introspection
+      pango
+      cairo
+      gdk-pixbuf
+      librsvg
+      graphene
+      wget
+      uv
+      unzip
+      pkg-config
+      pkg-config
+      quickshell
+      qt6.qtwayland
+      firefox
+      openssl
+      sqlite
+      curl
+      libsoup_3
+      json-glib
+      gcc
+      gnumake
+      tmux
+      gdb
+      clang
+      cmake
+      meson
+      ninja
+      pkg-config
+      fastfetch
+      autoconf
+      swaynotificationcenter
+      automake
+      libtool
+      polkit_gnome
+      hyprshot
+      brightnessctl
+      wiremix
+      evince
+      parole
+      eog
+    ];
+  };
+
+}

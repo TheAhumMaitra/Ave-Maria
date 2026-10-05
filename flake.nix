@@ -43,7 +43,7 @@
         modules = [
           ./configuration.nix
 
-	  mangowm.nixosModules.mango
+          mangowm.nixosModules.mango
           home-manager.nixosModules.home-manager
 
           {
